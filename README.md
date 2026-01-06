@@ -1,11 +1,11 @@
-# storybook-mcp
+# storybook-mcp-tools
 
-[![npm version](https://img.shields.io/npm/v/storybook-mcp.svg)](https://www.npmjs.com/package/storybook-mcp)
-[![license](https://img.shields.io/npm/l/storybook-mcp.svg)](https://github.com/benamaraissam/storybook-mcp/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/storybook-mcp-tools.svg)](https://www.npmjs.com/package/storybook-mcp-tools)
+[![license](https://img.shields.io/npm/l/storybook-mcp-tools.svg)](https://github.com/benamaraissam/storybook-mcp/blob/main/LICENSE)
 
 Expose your Storybook stories via **MCP (Model Context Protocol)** with **SSE** and **HTTP streaming** support. Works with **Storybook 8, 9, and 10**.
 
-📦 **[View on npm](https://www.npmjs.com/package/storybook-mcp)** | 🐙 **[View on GitHub](https://github.com/benamaraissam/storybook-mcp)**
+📦 **[View on npm](https://www.npmjs.com/package/storybook-mcp-tools)** | 🐙 **[View on GitHub](https://github.com/benamaraissam/storybook-mcp)**
 
 ## Features
 
@@ -20,13 +20,13 @@ Expose your Storybook stories via **MCP (Model Context Protocol)** with **SSE** 
 
 ```bash
 # Using npx (no installation required)
-npx storybook-mcp
+npx storybook-mcp-tools
 
 # Or install globally
-npm install -g storybook-mcp
+npm install -g storybook-mcp-tools
 
 # Or as a dev dependency
-npm install --save-dev storybook-mcp
+npm install --save-dev storybook-mcp-tools
 ```
 
 ## Quick Start
@@ -34,9 +34,9 @@ npm install --save-dev storybook-mcp
 Navigate to your Storybook project and run:
 
 ```bash
-npx storybook-mcp
+npx storybook-mcp-tools
 # or shorter alias
-npx sb-mcp
+npx sb-mcp-tools
 ```
 
 This will:
@@ -53,7 +53,7 @@ Access your services at:
 ## CLI Options
 
 ```bash
-npx storybook-mcp [options]
+npx storybook-mcp-tools [options]
 
 Options:
   -p, --port <number>          Port for the REST API server (default: 6006)
@@ -131,14 +131,14 @@ Resource URI for accessing all Storybook stories.
 Efficient streaming for large responses:
 
 ```bash
-npx storybook-mcp --transport httpStream --mcp-port 8080
+npx storybook-mcp-tools --transport httpStream --mcp-port 8080
 ```
 
 ### Server-Sent Events (SSE)
 Real-time updates via SSE:
 
 ```bash
-npx storybook-mcp --transport sse --mcp-port 8080
+npx storybook-mcp-tools --transport sse --mcp-port 8080
 ```
 
 ## REST API Endpoints

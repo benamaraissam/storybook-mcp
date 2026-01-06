@@ -27,7 +27,7 @@ function createMCPServer(config) {
   const framework = detectFramework(projectDir);
 
   const server = new FastMCP({
-    name: 'storybook-mcp',
+    name: 'storybook-mcp-tools',
     version: '1.0.0',
   });
 

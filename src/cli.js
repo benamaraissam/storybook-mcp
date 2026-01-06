@@ -16,7 +16,7 @@ const { detectStorybookVersion, findStorybookConfig, detectFramework } = require
 const program = new Command();
 
 program
-  .name('storybook-mcp')
+  .name('storybook-mcp-tools')
   .description('Expose Storybook stories via MCP protocol with SSE and HTTP streaming')
   .version('1.0.0')
   .option('-p, --port <number>', 'Port to run the API server on', '6006')

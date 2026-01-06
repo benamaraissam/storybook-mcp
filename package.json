@@ -1,11 +1,11 @@
 {
-  "name": "storybook-mcp",
+  "name": "storybook-mcp-tools",
   "version": "1.0.0",
   "description": "Expose Storybook stories via MCP protocol with SSE and HTTP streaming - works with Storybook 8, 9, and 10",
   "main": "src/index.js",
   "bin": {
-    "storybook-mcp": "src/cli.js",
-    "sb-mcp": "src/cli.js"
+    "storybook-mcp-tools": "src/cli.js",
+    "sb-mcp-tools": "src/cli.js"
   },
   "scripts": {
     "start": "node src/cli.js",

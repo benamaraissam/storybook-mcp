@@ -1,0 +1,11 @@
+examples/
+node_modules/
+.git/
+.gitignore
+*.log
+.env
+.DS_Store
+test/
+*.md
+!README.md
+
