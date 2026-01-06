@@ -1,0 +1,64 @@
+{
+  "name": "storybook-mcp",
+  "version": "1.0.0",
+  "description": "Expose Storybook stories via MCP protocol with SSE and HTTP streaming - works with Storybook 8, 9, and 10",
+  "main": "src/index.js",
+  "bin": {
+    "storybook-mcp": "src/cli.js",
+    "sb-mcp": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node test/run-tests.js",
+    "test:sb8": "node test/run-tests.js --only test-sb8",
+    "test:sb9": "node test/run-tests.js --only test-sb9",
+    "test:sb10": "node test/run-tests.js --only test-sb10"
+  },
+  "keywords": [
+    "storybook",
+    "mcp",
+    "model-context-protocol",
+    "sse",
+    "streaming",
+    "api",
+    "stories",
+    "documentation",
+    "components",
+    "design-system",
+    "angular",
+    "react",
+    "vue"
+  ],
+  "author": "issambenamara",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benamaraissam/storybook-mcp.git"
+  },
+  "homepage": "https://github.com/benamaraissam/storybook-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/benamaraissam/storybook-mcp/issues"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^3.0.0",
+    "node-fetch": "^2.7.0",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "fastmcp": "^3.26.7",
+    "zod": "^4.1.13"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "storybook": ">=8.0.0"
+  },
+  "peerDependenciesMeta": {
+    "storybook": {
+      "optional": true
+    }
+  }
+}
+
