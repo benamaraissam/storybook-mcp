@@ -5,4 +5,6 @@ node_modules/
 dist/
 build/
 .cache/
+examples/*/node_modules/
+examples/*/package-lock.json
 
