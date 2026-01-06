@@ -1,7 +1,38 @@
 # storybook-mcp-tools
 
+> ⚠️ **DEPRECATED** - This package is deprecated. Please use **[storybook-mcp-api](https://www.npmjs.com/package/storybook-mcp-api)** instead, which integrates both REST API and MCP protocol in a single unified server.
+
 [![npm version](https://img.shields.io/npm/v/storybook-mcp-tools.svg)](https://www.npmjs.com/package/storybook-mcp-tools)
 [![license](https://img.shields.io/npm/l/storybook-mcp-tools.svg)](https://github.com/benamaraissam/storybook-mcp/blob/main/LICENSE)
+
+## Migration
+
+**Switch to the new unified package:**
+
+```bash
+npm uninstall storybook-mcp-tools
+npm install storybook-mcp-api
+```
+
+Then update your usage:
+```bash
+# Old
+npx storybook-mcp-tools
+
+# New
+npx storybook-mcp-api
+```
+
+The new package provides:
+- ✅ All MCP protocol features (same as this package)
+- ✅ REST API endpoints for HTTP clients
+- ✅ Single unified server on one port
+- ✅ Better performance and maintenance
+- ✅ Improved SSE and Streamable HTTP support
+
+📦 **[Get storybook-mcp-api](https://www.npmjs.com/package/storybook-mcp-api)** | 🐙 **[GitHub](https://github.com/benamaraissam/storybook-mcp-api)**
+
+---
 
 Expose your Storybook stories via **MCP (Model Context Protocol)** with **SSE** and **HTTP streaming** support. Works with **Storybook 8, 9, and 10**.
 
